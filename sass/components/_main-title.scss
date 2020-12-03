@@ -1,0 +1,49 @@
+.main-title {
+  background-color: getColor("bg-black");
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  height: 600px;
+  background-image: linear-gradient(
+      to right,
+      getColor("hero-bg"),
+      getColor("hero-bg")
+    ),
+    url(../images/studio/hero.jpg);
+  max-width: 1600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__hero {
+    display: block;
+    margin-bottom: 30px;
+
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: getColor("white");
+  }
+  &__button {
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px getColor("blue");
+    padding: 10px 32px;
+    min-width: 200px;
+
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: getColor("white");
+    background: getColor("blue");
+    outline: none;
+    cursor: pointer;
+  }
+}

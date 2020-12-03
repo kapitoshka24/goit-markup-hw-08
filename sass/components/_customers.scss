@@ -1,0 +1,51 @@
+.customers {
+  &__title {
+    display: block;
+    margin-bottom: 50px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: getColor("black");
+  }
+
+  &__list {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__svg {
+    fill: getColor("customers");
+    transition: transitionFunc(fill);
+  }
+
+  &__link:hover &__svg,
+  &__link:focus &__svg {
+    fill: getColor("blue");
+  }
+}
+
+.customers__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid getColor("customers");
+  border-radius: 4px;
+  transition: transitionFunc(border);
+
+  &:hover,
+  &:focus {
+    border-color: getColor("blue");
+  }
+}

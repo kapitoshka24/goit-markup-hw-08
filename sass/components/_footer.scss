@@ -1,0 +1,45 @@
+footer {
+  background-color: getColor("bg-black");
+}
+
+.footer {
+  display: flex;
+}
+.footer-contacts {
+  &__item {
+    display: flex;
+
+    &:last-child {
+      padding-bottom: 60px;
+    }
+    &:not(:last-child) {
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+  }
+
+  &__street {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 9px;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: getColor("white");
+    font-style: normal;
+  }
+
+  &__link {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: getColor("contacts-footer");
+    text-decoration: none;
+    font-style: normal;
+  }
+}

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header header--line">
+      <div class="container main-nav">
+        <a class="logo logo--black" href="./index.html"
+          ><span class="logo__web">Web</span>Studio</a
+        >
+        <nav>
+          <ul class="list site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="list contacts-nav">
+          <li class="contacts-nav__item">
+            <a
+              class="contacts-nav__link"
+              target="_blank"
+              rel="noopener noreferer"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="contacts-nav__svg" width="16px" height="12px">
+                <use href="./images/studio/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-nav__item">
+            <a
+              class="contacts-nav__link"
+              target="_blank"
+              rel="noopener noreferer"
+              href="tel:+380961111111"
+            >
+              <svg class="contacts-nav__svg" width="10px" height="16px">
+                <use href="./images/studio/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <h1 hidden>Portfolio</h1>
+      <section>
+        <div class="container">
+          <ul class="list services">
+            <li class="services__item">
+              <button class="services__btn" type="button">Все</button>
+            </li>
+            <li class="services__item">
+              <button class="services__btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="services__item">
+              <button class="services__btn" type="button">Приложения</button>
+            </li>
+            <li class="services__item">
+              <button class="services__btn" type="button">Дизайн</button>
+            </li>
+            <li class="services__item">
+              <button class="services__btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <ul class="list products">
+            <li class="products__item">
+              <a class="products__link" href="">
+                <div class="overlay">
+                  <img
+                    class="products__image"
+                    src="./images/portfolio/Technokriak.jpg"
+                    alt="Веб-сайт Технокряк"
+                  />
+                  <p class="overlay__text">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <h2 class="products__name">Технокряк</h2>
+                <p class="products__type">Веб-сайт</p>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="">
+                <div class="overlay">
+                  <img
+                    class="products__image"
+                    src="./images/portfolio/NewOrleanGoldenStar.jpg"
+                    alt="Постер Новый Орлеан"
+                  />
+                  <p class="overlay__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Blanditiis voluptatum facere maxime dolorum, voluptatem
+                    facilis! Ut nobis ipsum, assumenda dolore repudiandae
+                    ratione.
+                  </p>
+                </div>
+                <h2 class="products__name">
+                  Постер <span lang="en">New Orlean vs Golden Star</span>
+                </h2>
+                <p class="products__type">Дизайн</p>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="">
+                <div class="overlay">
+                  <img
+                    class="products__image"
+                    src="./images/portfolio/Seafood.jpg"
+                    alt="Ресторан Seafood"
+                  />
+                  <p class="overlay__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Blanditiis voluptatum facere maxime dolorum, voluptatem
+                    facilis! Ut nobis ipsum, assumenda dolore repudiandae
+                    ratione.
+                  </p>
+                </div>
+                <h2 class="products__name">
+                  Ресторан <span lang="en">Seafood</span>
+                </h2>
+                <p class="products__type">Приложение</p>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="">
+                <div class="overlay">
+                  <img
+                    class="products__image"
+                    src="./images/portfolio/Prime.jpg"
+                    alt="Проект Prime"
+                  />
+                  <p class="overlay__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Blanditiis voluptatum facere maxime dolorum, voluptatem
+                    facilis! Ut nobis ipsum, assumenda dolore repudiandae
+                    ratione.
+                  </p>
+                </div>
+
+                <h2 class="products__name">
+                  Проект <span lang="en">Prime</span>
+                </h2>
+                <p class="products__type">Маркетинг</p>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="">
+                <div class="overlay">
+                  <img
+                    class="products__image"
+                    src="./images/portfolio/Boxes.jpg"
+                    alt="Проект Boxes"
+                  />
+                  <p class="overlay__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Blanditiis voluptatum facere maxime dolorum, voluptatem
+                    facilis! Ut nobis ipsum, assumenda dolore repudiandae
+                    ratione.
+                  </p>
+                </div>
+                <h2 class="products__name">
+                  Проект <span lang="en">Boxes</span>
+                </h2>
+                <p class="products__type">Приложение</p>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="">
+                <div class="overlay">
+                  <img
+                    class="products__image"
+                    src="./images/portfolio/Inspiration.jpg"
+                    alt="Веб-сайт Inspiration has no borders"
+                  />
+                  <p class="overlay__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Blanditiis voluptatum facere maxime dolorum, voluptatem
+                    facilis! Ut nobis ipsum, assumenda dolore repudiandae
+                    ratione.
+                  </p>
+                </div>
+                <h2 class="products__name" lang="en">
+                  Inspiration has no Borders
+                </h2>
+                <p class="products__type">Веб-сайт</p></a
+              >
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="">
+                <div class="overlay">
+                  <img
+                    class="products__image"
+                    src="./images/portfolio/LimitedEdition.jpg"
+                    alt="Издание Limited Edition"
+                  />
+                  <p class="overlay__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Blanditiis voluptatum facere maxime dolorum, voluptatem
+                    facilis! Ut nobis ipsum, assumenda dolore repudiandae
+                    ratione.
+                  </p>
+                </div>
+                <h2 class="products__name">
+                  Издание <span lang="en">Limited Edition</span>
+                </h2>
+                <p class="products__type">Дизайн</p>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="">
+                <div class="overlay">
+                  <img
+                    class="products__image"
+                    src="./images/portfolio/LAB.jpg"
+                    alt="Проект LAB"
+                  />
+                  <p class="overlay__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Blanditiis voluptatum facere maxime dolorum, voluptatem
+                    facilis! Ut nobis ipsum, assumenda dolore repudiandae
+                    ratione.
+                  </p>
+                </div>
+                <h2 class="products__name">
+                  Проект <span lang="en">LAB</span>
+                </h2>
+                <p class="products__type">Маркетинг</p></a
+              >
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="">
+                <div class="overlay">
+                  <img
+                    class="products__image"
+                    src="./images/portfolio/GrowingBusiness.jpg"
+                    alt="Приложение GrowingBusiness"
+                  />
+                  <p class="overlay__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Blanditiis voluptatum facere maxime dolorum, voluptatem
+                    facilis! Ut nobis ipsum, assumenda dolore repudiandae
+                    ratione.
+                  </p>
+                </div>
+                <h2 class="products__name" lang="en">Growing Business</h2>
+                <p class="products__type">Приложение</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacts">
+      <div class="container footer">
+        <div class="footer-contacts">
+          <a class="logo logo--white" href="./"
+            ><span class="logo__web">Web</span>Studio</a
+          >
+          <address class="footer-contacts__street">
+            г. Киев, пр-т Леси Украинки, 26
+          </address>
+          <address>
+            <ul class="list footer-contacts__list">
+              <li class="footer-contacts__item">
+                <a
+                  class="footer-contacts__link"
+                  target="_blank"
+                  rel="noopener noreferer"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-contacts__item">
+                <a
+                  class="footer-contacts__link"
+                  target="_blank"
+                  rel="noopener noreferer"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join-us">
+          <h2 class="join-us__title">Присоединяйтесь</h2>
+          <ul class="list join-us__list">
+            <li class="join-us__item">
+              <a
+                target="_blank"
+                rel="noopener noreferer"
+                class="join-us__link"
+                href="https://www.instagram.com/"
+              >
+                <svg class="join-us__svg" width="20px" height="20px">
+                  <use href="./images/studio/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-us__item">
+              <a
+                target="_blank"
+                rel="noopener noreferer"
+                class="join-us__link"
+                href="https://twitter.com/"
+              >
+                <svg class="join-us__svg" width="20px" height="20px">
+                  <use href="./images/studio/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-us__item">
+              <a
+                target="_blank"
+                rel="noopener noreferer"
+                class="join-us__link"
+                href="https://facebook.com/"
+              >
+                <svg class="join-us__svg" width="20px" height="20px">
+                  <use href="./images/studio/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-us__item">
+              <a
+                target="_blank"
+                rel="noopener noreferer"
+                class="join-us__link"
+                href="https://www.linkedin.com/"
+              >
+                <svg class="join-us__svg" width="20px" height="20px">
+                  <use href="./images/studio/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sign-up">
+          <h2 class="sign-up__title">подпишитесь на рассылку</h2>
+          <form class="sign-up__form js-speaker-form">
+            <label class="sign-up__field">
+              <input
+                class="sign-up__input"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+            </label>
+            <div class="sign-up__wrapper">
+              <button type="submit" class="sign-up__send-btn">
+                Подписаться
+              </button>
+              <svg class="sign-up__svg" width="24px" height="24px">
+                <use href="./images/studio/sprite.svg#telegram"></use>
+              </svg>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const { height: pageHeaderHeight } = document
+        .querySelector(".main-nav")
+        .getBoundingClientRect();
+
+      document.body.style.paddingTop = `${pageHeaderHeight}px`;
+    </script>
+  </body>
+</html>

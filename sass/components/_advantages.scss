@@ -1,0 +1,42 @@
+.advantages {
+  display: flex;
+  align-items: center;
+  padding-top: 94px;
+
+  &__item {
+    width: calc((100% - 90px) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__svg-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+    background-color: getColor("our-team-bg");
+  }
+
+  &__title {
+    padding-bottom: 10px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: getColor("black");
+  }
+
+  &__text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: getColor("grey");
+  }
+}

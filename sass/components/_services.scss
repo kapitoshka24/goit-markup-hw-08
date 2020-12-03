@@ -1,0 +1,34 @@
+.services {
+  display: flex;
+  justify-content: center;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.services__btn {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px getColor("blue");
+  padding: 6px 22px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor("black");
+  background-color: getColor("inactive-bg-button");
+  outline: none;
+  cursor: pointer;
+  transition: transitionFunc(color), transitionFunc(background-color);
+
+  &:hover,
+  &:focus {
+    color: getColor("white");
+    background-color: getColor("blue");
+  }
+}
