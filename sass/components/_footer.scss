@@ -3,19 +3,35 @@ footer {
 }
 
 .footer {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  &-wrapper {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 .footer-contacts {
   &__item {
-    &:last-child {
-      margin-bottom: 60px;
+    @media screen and (max-width: 767px), (min-width: 1200px) {
+      &:last-child {
+        margin-bottom: 60px;
+      }
     }
+
     &:not(:last-child) {
       margin-top: 9px;
       margin-bottom: 9px;

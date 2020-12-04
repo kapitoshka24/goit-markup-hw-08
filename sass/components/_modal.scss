@@ -22,15 +22,13 @@
   text-align: center;
   top: 50%;
   left: 50%;
-
+  @media screen and (max-width: 1199px) {
+    min-width: 450px;
+    min-height: 610px;
+  }
   @media screen and (min-width: 1200px) {
     min-width: 528px;
     min-height: 581px;
-  }
-
-  @media screen and (max-width: 767px) {
-    min-width: 450px;
-    min-height: 610px;
   }
 
   background-color: getColor("white");
@@ -77,7 +75,7 @@
     font-size: 20px;
     line-height: 1.15;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       line-height: 1.5;
       margin-right: 40px;
       margin-left: 40px;

@@ -1,14 +1,12 @@
 .join-us {
   &__title {
     margin-bottom: 20px;
-
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
     @media screen and (min-width: 1200px) {
       margin-left: 70px;
       margin-top: 72px;
-    }
-
-    @media screen and (max-width: 767px) {
-      text-align: center;
     }
 
     font-family: Roboto;
@@ -24,13 +22,11 @@
 
   &__list {
     display: flex;
-
-    @media screen and (min-width: 1200px) {
-      margin-left: 70px;
-    }
-
     @media screen and (max-width: 767px) {
       justify-content: center;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
     }
   }
 

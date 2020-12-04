@@ -188,9 +188,9 @@
         </div>
       </section>
 
-      <section class="section no-padding">
+      <section class="section no-padding advantages">
         <div class="container">
-          <ul class="list advantages">
+          <ul class="list advantages__list">
             <li class="advantages__item">
               <div class="advantages__svg-item">
                 <svg class="advantages__svg" width="70px" height="70px">
@@ -572,88 +572,90 @@
 
     <footer id="contacts">
       <div class="container footer">
-        <div class="footer-contacts">
-          <a class="logo logo--white" href="./"
-            ><span class="logo__web">Web</span>Studio</a
-          >
-          <address class="footer-contacts__street">
-            г. Киев, пр-т Леси Украинки, 26
-          </address>
-          <address>
-            <ul class="list footer-contacts__list">
-              <li class="footer-contacts__item">
+        <div class="footer-wrapper">
+          <div class="footer-contacts">
+            <a class="logo logo--white" href="./"
+              ><span class="logo__web">Web</span>Studio</a
+            >
+            <address class="footer-contacts__street">
+              г. Киев, пр-т Леси Украинки, 26
+            </address>
+            <address>
+              <ul class="list footer-contacts__list">
+                <li class="footer-contacts__item">
+                  <a
+                    class="footer-contacts__link"
+                    target="_blank"
+                    rel="noopener noreferer"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-contacts__item">
+                  <a
+                    class="footer-contacts__link"
+                    target="_blank"
+                    rel="noopener noreferer"
+                    href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join-us">
+            <h2 class="join-us__title">Присоединяйтесь</h2>
+            <ul class="list join-us__list">
+              <li class="join-us__item">
                 <a
-                  class="footer-contacts__link"
                   target="_blank"
                   rel="noopener noreferer"
-                  href="mailto:info@example.com"
-                  >info@example.com</a
+                  class="join-us__link"
+                  href="https://www.instagram.com/"
                 >
+                  <svg class="join-us__svg" width="20px" height="20px">
+                    <use href="./images/studio/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-contacts__item">
+              <li class="join-us__item">
                 <a
-                  class="footer-contacts__link"
                   target="_blank"
                   rel="noopener noreferer"
-                  href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+                  class="join-us__link"
+                  href="https://twitter.com/"
                 >
+                  <svg class="join-us__svg" width="20px" height="20px">
+                    <use href="./images/studio/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-us__item">
+                <a
+                  target="_blank"
+                  rel="noopener noreferer"
+                  class="join-us__link"
+                  href="https://facebook.com/"
+                >
+                  <svg class="join-us__svg" width="20px" height="20px">
+                    <use href="./images/studio/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-us__item">
+                <a
+                  target="_blank"
+                  rel="noopener noreferer"
+                  class="join-us__link"
+                  href="https://www.linkedin.com/"
+                >
+                  <svg class="join-us__svg" width="20px" height="20px">
+                    <use href="./images/studio/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join-us">
-          <h2 class="join-us__title">Присоединяйтесь</h2>
-          <ul class="list join-us__list">
-            <li class="join-us__item">
-              <a
-                target="_blank"
-                rel="noopener noreferer"
-                class="join-us__link"
-                href="https://www.instagram.com/"
-              >
-                <svg class="join-us__svg" width="20px" height="20px">
-                  <use href="./images/studio/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-us__item">
-              <a
-                target="_blank"
-                rel="noopener noreferer"
-                class="join-us__link"
-                href="https://twitter.com/"
-              >
-                <svg class="join-us__svg" width="20px" height="20px">
-                  <use href="./images/studio/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-us__item">
-              <a
-                target="_blank"
-                rel="noopener noreferer"
-                class="join-us__link"
-                href="https://facebook.com/"
-              >
-                <svg class="join-us__svg" width="20px" height="20px">
-                  <use href="./images/studio/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-us__item">
-              <a
-                target="_blank"
-                rel="noopener noreferer"
-                class="join-us__link"
-                href="https://www.linkedin.com/"
-              >
-                <svg class="join-us__svg" width="20px" height="20px">
-                  <use href="./images/studio/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="sign-up">
           <h2 class="sign-up__title">подпишитесь на рассылку</h2>
@@ -666,14 +668,12 @@
                 placeholder="Email"
               />
             </label>
-            <div class="sign-up__wrapper">
-              <button type="submit" class="sign-up__send-btn">
-                Подписаться
-              </button>
+            <button type="submit" class="sign-up__send-btn">
+              Подписаться
               <svg class="sign-up__svg" width="24px" height="24px">
                 <use href="./images/studio/sprite.svg#telegram"></use>
               </svg>
-            </div>
+            </button>
           </form>
         </div>
       </div>

@@ -8,7 +8,6 @@
   &--line {
     border-bottom: 1px solid getColor("line");
   }
-  position: relative;
 }
 .main-nav {
   display: flex;
@@ -55,15 +54,20 @@
   }
 }
 .site-nav {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-left: 93px;
-  }
   @media screen and (max-width: 767px) {
     display: none;
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+  }
   &__item:not(:last-child) {
     margin-right: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 93px;
   }
 }
 .site-nav__link {
@@ -103,19 +107,34 @@
 }
 
 .contacts-nav {
-  margin-left: auto;
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
   @media screen and (max-width: 767px) {
     display: none;
   }
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 83px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+    margin-left: auto;
+  }
+  @media screen and (max-width: 1199px) {
+    &__item:first-child {
+      margin-bottom: 10px;
+    }
+  }
   &__svg {
-    margin-right: 10px;
+    @media screen and (min-width: 768px) {
+      margin-right: 8px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
     fill: getColor("grey");
     transition: transitionFunc(fill);
   }
@@ -128,13 +147,22 @@
 .contacts-nav__link {
   display: inline-flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-size: 14px;
+    line-height: 1.14;
+  }
   font-family: Roboto;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 
