@@ -3,25 +3,34 @@ footer {
 }
 
 .footer {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .footer-contacts {
   &__item {
-    display: flex;
-
     &:last-child {
-      padding-bottom: 60px;
+      margin-bottom: 60px;
     }
     &:not(:last-child) {
-      padding-top: 9px;
-      padding-bottom: 9px;
+      margin-top: 9px;
+      margin-bottom: 9px;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: block;
+      text-align: center;
     }
   }
 
   &__street {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 9px;
+    margin-top: 20px;
+    margin-bottom: 9px;
 
     font-family: Roboto;
     font-weight: 400;
@@ -30,6 +39,10 @@ footer {
     letter-spacing: 0.03em;
     color: getColor("white");
     font-style: normal;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
 
   &__link {

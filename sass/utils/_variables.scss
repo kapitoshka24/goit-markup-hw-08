@@ -14,9 +14,19 @@ $colors: (
   "customers": #afb1b8,
   "sm-icon": rgba(255, 255, 255, 0.1),
 );
+$break-points: (
+  "mobile": 480px,
+  "tablet": 768px,
+  "desktop": 1200px,
+);
+
 @function getColor($key) {
   @return map-get($colors, $key);
 }
+@function getBreakpoint($key) {
+  @return map-get($break-points, $key);
+}
+
 @function transitionFunc($key) {
   @return $key 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

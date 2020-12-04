@@ -109,8 +109,17 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+
+    @media screen and (max-width: 767px) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+
     letter-spacing: 0.03em;
     margin-bottom: 0;
     margin-left: 9px;

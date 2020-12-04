@@ -16,7 +16,13 @@
   }
   &--white {
     display: block;
-    padding-top: 60px;
     color: getColor("white");
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 60px;
+    }
   }
 }

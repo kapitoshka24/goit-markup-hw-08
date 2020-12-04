@@ -22,8 +22,17 @@
   text-align: center;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+
+  @media screen and (max-width: 767px) {
+    min-width: 450px;
+    min-height: 610px;
+  }
+
   background-color: getColor("white");
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
@@ -44,7 +53,7 @@
 
   &__close-button {
     display: flex;
-    text-align: end;
+    // text-align: end;
     margin-top: 8px;
     margin-right: 8px;
     background-color: getColor("white");
@@ -67,6 +76,12 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
+
+    @media screen and (max-width: 767px) {
+      line-height: 1.5;
+      margin-right: 40px;
+      margin-left: 40px;
+    }
     text-align: center;
     letter-spacing: 0.03em;
   }

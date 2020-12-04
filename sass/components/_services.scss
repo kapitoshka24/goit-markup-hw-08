@@ -1,9 +1,27 @@
 .services {
   display: flex;
-  justify-content: center;
 
   &__item:not(:last-child) {
     margin-right: 8px;
+  }
+
+  @media screen and (max-width: 767px) {
+    &__item:nth-last-child(-n + 2) {
+      margin-top: 15px;
+    }
+    &__item:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
   }
 }
 .services__btn {
@@ -11,8 +29,11 @@
   border-radius: 4px;
   border: 1px getColor("blue");
   padding: 6px 22px;
-  margin-top: 94px;
-  margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
 
   font-family: Roboto;
   font-weight: 500;

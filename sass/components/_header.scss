@@ -1,23 +1,67 @@
 .header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  min-height: 80px;
-  background-color: getColor("white");
-  z-index: 9999;
-
+  @media screen and (max-width: 767px) {
+    min-height: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    min-height: 80px;
+  }
   &--line {
     border-bottom: 1px solid getColor("line");
   }
+  position: relative;
 }
 .main-nav {
-  align-items: center;
   display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    min-height: 60px;
+    justify-content: space-between;
+
+    &__button {
+      display: inline-flex;
+      border: none;
+      border-color: transparent;
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+
+      &--is-open .main-nav__close {
+        display: none;
+      }
+      &--is-open .main-nav__icon {
+        display: inline-flex;
+      }
+    }
+    &__close {
+      display: none;
+      &:hover,
+      &:focus {
+        fill: getColor("blue");
+      }
+    }
+    &__icon {
+      &:hover,
+      &:focus {
+        fill: getColor("blue");
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &__button {
+      display: none;
+    }
+  }
 }
 .site-nav {
-  margin-left: 93px;
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 93px;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   &__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -60,8 +104,12 @@
 
 .contacts-nav {
   margin-left: auto;
-  display: flex;
-
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   &__item:not(:last-child) {
     margin-right: 50px;
   }

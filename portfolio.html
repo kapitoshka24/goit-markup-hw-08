@@ -66,6 +66,26 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="main-nav__button main-nav__button--is-open"
+        >
+          <svg
+            class="main-nav__svg"
+            width="40px"
+            height="40px"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="main-nav__close"
+              href="./images/studio/sprite.svg#close_menu"
+            ></use>
+            <use
+              class="main-nav__icon"
+              href="./images/studio/sprite.svg#close_icon"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -391,12 +411,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      const { height: pageHeaderHeight } = document
-        .querySelector(".main-nav")
-        .getBoundingClientRect();
-
-      document.body.style.paddingTop = `${pageHeaderHeight}px`;
-    </script>
   </body>
 </html>

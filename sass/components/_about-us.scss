@@ -1,12 +1,16 @@
-.advantages__item:not(:last-child),
-.about-us__item:not(:last-child),
-.our-team__item:not(:last-child) {
+.about-us__item:not(:last-child) {
   margin-right: 30px;
 }
 
 .about-us {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &__list {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 
   &__photo {
@@ -21,9 +25,13 @@
 
   &__text {
     position: absolute;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     left: 0;
     bottom: 0;
     width: 370px;

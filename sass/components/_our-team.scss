@@ -1,4 +1,9 @@
 .our-team {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
   background-color: getColor("our-team-bg");
 
   &__item {
@@ -7,22 +12,36 @@
     border-radius: 0px 0px 4px 4px;
     background-color: getColor("white");
 
-    &:not(:last-child) {
-      margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
     }
   }
 
   &__title {
-    margin-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
-    display: flex;
-    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__photo {
-    width: 270px;
+    display: block;
+    width: 100%;
     margin-bottom: 30px;
   }
 

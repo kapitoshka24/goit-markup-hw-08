@@ -42,6 +42,12 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+        <button type="button" class="main-nav__button main-nav__button--is-open">
+          <svg class="main-nav__svg" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <use class="main-nav__close" href="/sprite.49c1cc0c.svg#close_menu"></use>
+            <use class="main-nav__icon" href="/sprite.49c1cc0c.svg#close_icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -340,8 +346,8 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container customers">
+      <section class="section customers">
+        <div class="container">
           <h2 class="customers__title">Постоянные клиенты</h2>
           <ul class="list customers__list">
             <li class="customers__item">
@@ -460,12 +466,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- закрепляет хедер сверху страницы и добавляет паддинг по размеру хедера -->
-    <script>var _document$querySelect = document.querySelector(".main-nav").getBoundingClientRect(),
-    pageHeaderHeight = _document$querySelect.height;
-
-document.body.style.paddingTop = "".concat(pageHeaderHeight, "px");</script>
 
     <!-- открывает и закрывает модальное окно -->
     <script>var refs = {

@@ -1,7 +1,13 @@
 .products {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 94px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 
   &__link {
     display: block;
@@ -47,8 +53,12 @@
 
 .products__item {
   border: 1px solid getColor("white-bg-btn");
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+  }
+
   margin-bottom: 30px;
   transition: transitionFunc(box-shadow);
 
@@ -78,6 +88,11 @@
     transform: translateY(101%);
     pointer-events: none;
     transition: transitionFunc(transform);
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      align-items: center;
+    }
 
     font-family: Roboto;
     font-size: 18px;

@@ -3,9 +3,17 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
+
   padding-bottom: 200px;
-  height: 600px;
+  @media screen and (max-width: 767px) {
+    height: 400px;
+    padding-top: 120px;
+  }
+  @media screen and (min-width: getBreakpoint("desktop")) {
+    height: 600px;
+    padding-top: 200px;
+  }
+
   background-image: linear-gradient(
       to right,
       getColor("hero-bg"),
@@ -23,6 +31,12 @@
 
     font-family: Roboto;
     font-weight: 900;
+
+    @media screen and (max-width: getBreakpoint("tablet")) {
+      font-size: 26px;
+      line-height: 1.16;
+    }
+
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
