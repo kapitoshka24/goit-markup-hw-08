@@ -439,7 +439,7 @@ p {
 @media screen and (max-width: 479px) {
   .modal {
     width: 95vw;
-    height: 97vh;
+    height: 610px;
   }
 }
 
