@@ -168,7 +168,7 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  __button {
+  .menu__button {
     display: none;
   }
 }
@@ -183,10 +183,6 @@ p {
 @media screen and (min-width: 768px) {
   .header {
     min-height: 80px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
   }
 }
 

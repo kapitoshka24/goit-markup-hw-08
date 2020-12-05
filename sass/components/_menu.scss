@@ -50,9 +50,9 @@
       fill: getColor("blue");
     }
   }
-}
-@media screen and (min-width: 768px) {
-  &__button {
-    display: none;
+  @media screen and (min-width: 768px) {
+    &__button {
+      display: none;
+    }
   }
 }
