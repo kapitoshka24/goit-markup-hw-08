@@ -5,23 +5,69 @@
   margin-right: auto;
   padding-bottom: 200px;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     height: 400px;
     padding-top: 120px;
+    background-image: linear-gradient(
+        to right,
+        getColor("hero-bg"),
+        getColor("hero-bg")
+      ),
+      url(../images/studio/hero-mobile.jpg);
+    max-width: 560px;
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          getColor("hero-bg"),
+          getColor("hero-bg")
+        ),
+        url(../images/studio/hero-mobile@2x.jpg);
+    }
+  }
+
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    height: 400px;
+    padding-top: 120px;
+
+    background-image: linear-gradient(
+        to right,
+        getColor("hero-bg"),
+        getColor("hero-bg")
+      ),
+      url(../images/studio/hero-tablet.jpg);
+    max-width: 960px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          getColor("hero-bg"),
+          getColor("hero-bg")
+        ),
+        url(../images/studio/hero-tablet@2x.jpg);
+    }
   }
 
   @media screen and (min-width: 1200px) {
     height: 600px;
     padding-top: 200px;
+    background-image: linear-gradient(
+        to right,
+        getColor("hero-bg"),
+        getColor("hero-bg")
+      ),
+      url(../images/studio/hero.jpg);
+    max-width: 1600px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          getColor("hero-bg"),
+          getColor("hero-bg")
+        ),
+        url(../images/studio/hero@2x.jpg);
+    }
   }
 
-  background-image: linear-gradient(
-      to right,
-      getColor("hero-bg"),
-      getColor("hero-bg")
-    ),
-    url(../images/studio/hero.jpg);
-  max-width: 1600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
