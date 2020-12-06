@@ -587,6 +587,13 @@ img {
   }
 }
 
+@media screen and (max-height: 767px) and (orientation: landscape) {
+  .modal {
+    margin-top: 40vh;
+    margin-bottom: 10vh;
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
